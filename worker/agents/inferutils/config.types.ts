@@ -269,7 +269,7 @@ const MODELS_MASTER = {
             name: 'Kimi K2',
             size: ModelSize.LITE,
             provider: 'moonshot',
-            creditCost: 0.6,  // ~$0.14/1M input
+            creditCost: 0.56, // ~$0.14/1M input ($0.14 / $0.25 baseline = 0.56)
             contextSize: 131072, // 128K context
         }
     },
