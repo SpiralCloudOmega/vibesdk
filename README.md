@@ -103,7 +103,7 @@ Before clicking "Deploy to Cloudflare", have these ready:
 - Advanced Certificate Manager (needed when you map a first-level subdomain such as `abc.xyz.com` so Cloudflare can issue the required wildcard certificate for preview apps on `*.abc.xyz.com`)
 
 ### 🔑 Required API Key
-- **Google Gemini API Key** - Get from [ai.google.dev](https://ai.google.dev)
+- **Kimi Code API Key** - Get from [kimi.com/code](https://www.kimi.com/code/docs/en/)
 
 Once you click "Deploy to Cloudflare", you'll be taken to your Cloudflare dashboard where you can configure your VibeSDK deployment with these variables. 
 
@@ -111,7 +111,7 @@ Once you click "Deploy to Cloudflare", you'll be taken to your Cloudflare dashbo
 
 ### 🔑 What you'll configure
 
-- `GOOGLE_AI_STUDIO_API_KEY` - Your Google Gemini API key for Gemini models
+- `MOONSHOT_API_KEY` - Your Kimi Code API key for Kimi K2 models
 - `JWT_SECRET` - Secure random string for session management
 - `WEBHOOK_SECRET` - Webhook authentication secret
 - `SECRETS_ENCRYPTION_KEY` - Encryption key for secrets
@@ -430,7 +430,7 @@ bun run deploy  # Builds and deploys automatically (includes remote DB migration
    ```bash
    wrangler secret put ANTHROPIC_API_KEY
    wrangler secret put OPENAI_API_KEY
-   wrangler secret put GOOGLE_AI_STUDIO_API_KEY
+   wrangler secret put MOONSHOT_API_KEY
    # ... etc
    ```
 
@@ -477,7 +477,7 @@ Cloudflare VibeSDK implements enterprise-grade security:
 - Check that your account has D1 access enabled
 
 **🔐 "Missing Required Variables"**
-- **Worker Secrets**: Verify all required secrets are set: `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `GOOGLE_AI_STUDIO_API_KEY`, `JWT_SECRET`
+- **Worker Secrets**: Verify all required secrets are set: `MOONSHOT_API_KEY`, `JWT_SECRET`
 - **AI Gateway Token**: `CLOUDFLARE_AI_GATEWAY_TOKEN` should be set as BOTH build variable and worker secret
 - **Environment Variables**: These are automatically loaded from wrangler.jsonc - no manual setup needed
 - **Authentication**: API tokens and account IDs are automatically provided by Workers Builds

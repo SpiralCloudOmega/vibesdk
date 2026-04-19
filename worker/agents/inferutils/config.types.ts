@@ -262,6 +262,18 @@ const MODELS_MASTER = {
     //     }
     // },
 
+    // --- Moonshot / Kimi Code Models ---
+    KIMI_K2: {
+        id: 'moonshot/kimi-k2',
+        config: {
+            name: 'Kimi K2',
+            size: ModelSize.LITE,
+            provider: 'moonshot',
+            creditCost: 0.6,  // ~$0.14/1M input
+            contextSize: 131072, // 128K context
+        }
+    },
+
     // --- Grok Models ---
     GROK_CODE_FAST_1: {
         id: 'grok/grok-code-fast-1',
