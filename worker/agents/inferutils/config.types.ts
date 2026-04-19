@@ -263,14 +263,14 @@ const MODELS_MASTER = {
     // },
 
     // --- Moonshot / Kimi Code Models ---
-    KIMI_K2: {
-        id: 'moonshot/kimi-k2',
+    KIMI_K2_6: {
+        id: 'moonshot/k2.6-code-preview',
         config: {
-            name: 'Kimi K2',
+            name: 'Kimi K2.6 Code Preview',
             size: ModelSize.LITE,
             provider: 'moonshot',
-            creditCost: 0.56, // ~$0.14/1M input ($0.14 / $0.25 baseline = 0.56)
-            contextSize: 131072, // 128K context
+            creditCost: 1.92, // ~$0.48/1M input ($0.48 / $0.25 baseline = 1.92)
+            contextSize: 262144, // 256K context
         }
     },
 
